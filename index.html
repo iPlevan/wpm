@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <table cellspacing="0" cellpadding="2" class="table table-bordered">
+        <tr>
+            <td>Words</td>
+            <td>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">words</span>
+                    <input id="wordsCount" type="number" class="form-control" placeholder="Enter words count" value="0" aria-describedby="basic-addon1">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Words per minute <span class="label label-default" data-toggle="tooltip" data-html="true" title="An average person produces somewhere between <b>125</b> and <b>150</b> words per minute. It’s recommended to keep a balanced pace to make you sound distinct.">i</span></td>
+            <td>
+                <input id="range" data-slider-id='ex1Slider' type="text" data-slider-min="60" data-slider-max="240" data-slider-step="5" data-slider-value="130"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>
+                <span id="readTime1"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <textarea id="word_count" class="form-control" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Total word count: <span id="display_count" class="label label-success">0</span> words.</td>
+            <td><span id="readTime2"></span> <span style="float: right" class="label label-default" data-toggle="tooltip" data-html="true" title="Approximate speech time">i</span></td>
+        </tr>
+    </table>
+
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+<script src="wpm.js"></script>
+<script>
+
+</script>
+</body>
+</html>
