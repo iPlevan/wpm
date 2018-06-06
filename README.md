@@ -1,1 +1,1 @@
-# wpm
+# WPM (Words per Minute) Calculator
